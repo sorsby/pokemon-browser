@@ -1,0 +1,12 @@
+.navigation-container {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 50%;
+  margin-top: 20px;
+
+  .selected-pokemon-id {
+    font-size: 30px;
+    margin: 0px;
+  }
+}
