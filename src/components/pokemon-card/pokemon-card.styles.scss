@@ -1,8 +1,12 @@
 .pokemon-card {
-  font-size: large;
   background-color: yellow;
   border-radius: 10px;
   min-width: 400px;
+  padding-bottom: 20px;
+
+  .pokemon-name {
+    background-color: orange;
+  }
 
   .pokemon-image {
     max-width: 100%;
@@ -13,12 +17,44 @@
     display: flex;
     justify-content: space-evenly;
     padding: 0px 20px 0px 20px;
+
+    .resistant-title,
+    .weaknesses-title {
+      background-color: orange;
+    }
+
+    .weaknesses,
+    .resistant {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      padding: 0px 20px 0px 20px;
+      p {
+        margin: 5px;
+        text-align: left;
+      }
+    }
   }
 
   .attacks-container {
     display: flex;
     justify-content: space-evenly;
     padding: 0px 20px 0px 20px;
+
+    .attack-title {
+      font-weight: bold;
+    }
+
+    .type-damage-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .special-title,
+    .fast-title {
+      background-color: orange;
+    }
 
     .special,
     .fast {
@@ -31,8 +67,12 @@
     .special-attack,
     .fast-attack {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-evenly;
+      p {
+        margin: 5px;
+        text-align: left;
+      }
     }
   }
 }
